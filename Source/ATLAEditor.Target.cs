@@ -8,8 +8,8 @@ public class ATLAEditorTarget : TargetRules
 	public ATLAEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
-		DefaultBuildSettings = BuildSettingsVersion.V9;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal6_0;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 		ExtraModuleNames.Add("ATLA");
 	}
 }

@@ -8,8 +8,8 @@ public class ATLATarget : TargetRules
 	public ATLATarget(TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V9;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Unreal6_0;
+		DefaultBuildSettings = BuildSettingsVersion.Latest;
+		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 		ExtraModuleNames.Add("ATLA");
 	}
 }
