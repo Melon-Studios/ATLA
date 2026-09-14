@@ -1,12 +1,13 @@
 // Copyright Melon Studios.
 
 #include "ATLABlueprintFunctionLibrary.h"
+#include "ATLAGameInstance.h"
 #include "Kismet/GameplayStatics.h"
 
-//UATLAGameInstance* UATLABlueprintFunctionLibrary::GetATLAGameInstance(const UObject* WorldContextObject)
-//{
-//	return Cast<UATLAGameInstance>(UGameplayStatics::GetGameInstance(WorldContextObject));
-//}
+UATLAGameInstance* UATLABlueprintFunctionLibrary::GetATLAGameInstance(const UObject* WorldContextObject)
+{
+	return Cast<UATLAGameInstance>(UGameplayStatics::GetGameInstance(WorldContextObject));
+}
 
 FString UATLABlueprintFunctionLibrary::GetGameInfoDetails()
 {

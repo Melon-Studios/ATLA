@@ -6,6 +6,9 @@
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "ATLABlueprintFunctionLibrary.generated.h"
 
+class UDataTable;
+class UATLAGameInstance;
+
 /**
  *	ATLA Blueprint Function Library Class.
  */
@@ -15,12 +18,12 @@ class ATLA_API UATLABlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 
 public:
-	//UFUNCTION(BlueprintPure, Category = "ATLA", meta = (WorldContext = "WorldContextObject"))
-	//static UATLAGameInstance* GetATLAGameInstance(const UObject* WorldContextObject);
+	UFUNCTION(BlueprintPure, Category = "ATLA", meta = (WorldContext = "WorldContextObject"))
+	static UATLAGameInstance* GetATLAGameInstance(const UObject* WorldContextObject);
 
 	UFUNCTION(BlueprintPure, Category = "ATLA")
 	static FString GetGameInfoDetails();
-
+	
 	template <typename T>
 	static T* GetDataTableRowByName(UDataTable* DataTable, const FName& RowName);
 };

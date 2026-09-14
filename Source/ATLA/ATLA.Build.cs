@@ -10,6 +10,9 @@ public class ATLA : ModuleRules
 
         // * Core dependencies
         PublicDependencyModuleNames.AddRange(["Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput"]);
+        
+        // * Slate Dependencies
+        PrivateDependencyModuleNames.AddRange(["Slate", "SlateCore"]);
 
 		// * UI dependencies
 		PublicDependencyModuleNames.AddRange(["UMG", "CommonUI", "ModelViewViewModel"]);

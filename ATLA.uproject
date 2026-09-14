@@ -26,15 +26,23 @@
 			"Enabled": true
 		},
 		{
-			"Name": "CommonUIToolset",
-			"Enabled": true
-		},
-		{
 			"Name": "ModelViewViewModel",
 			"Enabled": true
 		},
 		{
 			"Name": "ModelViewViewModelPreview",
+			"Enabled": true
+		},
+		{
+			"Name": "RiderSourceCodeAccess",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorDataStorage",
+			"Enabled": true
+		},
+		{
+			"Name": "EditorDataStorageFeatures",
 			"Enabled": true
 		}
 	],

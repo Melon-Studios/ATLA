@@ -13,4 +13,7 @@ UCLASS()
 class ATLA_API UATLAGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
+	
+public:
+	virtual void FinishDestroy() override;
 };
