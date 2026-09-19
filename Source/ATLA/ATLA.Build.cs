@@ -16,5 +16,8 @@ public class ATLA : ModuleRules
 
 		// * UI dependencies
 		PublicDependencyModuleNames.AddRange(["UMG", "CommonUI", "ModelViewViewModel"]);
+		
+		// * Gameplay System dependencies
+		PublicDependencyModuleNames.AddRange(["GameplayTags"]);
 	}
 }
