@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "CommonUserWidget.h"
 #include "GameplayTagContainer.h"
+
 #include "ATLACommonUserWidget.generated.h"
 
 class UCommonActivatableWidgetContainerBase;

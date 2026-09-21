@@ -1,6 +1,7 @@
 // Copyright Melon Studios.
 
 #include "UI/Widget/ATLACommonUserWidget.h"
+
 #include "ATLA/ATLA.h"
 
 UCommonActivatableWidgetContainerBase* UATLACommonUserWidget::GetWidgetStackByTag(const FGameplayTag& InTag) const
