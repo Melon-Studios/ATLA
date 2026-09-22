@@ -11,7 +11,7 @@ UCommonActivatableWidgetContainerBase* UATLACommonUserWidget::GetWidgetStackByTa
 	return WidgetStackMap.FindRef(InTag);
 }
 
-void UATLACommonUserWidget::CreateWidgetStack(FGameplayTag InStackTag, UCommonActivatableWidgetContainerBase* InStack)
+void UATLACommonUserWidget::CreateWidgetStack(const FGameplayTag InStackTag, UCommonActivatableWidgetContainerBase* InStack)
 {
 	if (IsDesignTime()) return;
 

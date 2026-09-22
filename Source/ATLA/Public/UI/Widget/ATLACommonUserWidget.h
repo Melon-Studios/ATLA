@@ -23,7 +23,7 @@ public:
 
 protected:
 	UFUNCTION(BlueprintCallable, Category = "ATLA|UI")
-	void CreateWidgetStack(UPARAM(meta = ( Categories = "ATLA.UI")) FGameplayTag InStackTag, UCommonActivatableWidgetContainerBase* InStack);
+	void CreateWidgetStack(UPARAM(meta = ( Categories = "ATLA.UI.Layer")) const FGameplayTag InStackTag, UCommonActivatableWidgetContainerBase* InStack);
 
 private:
 	UPROPERTY(Transient)

@@ -4,7 +4,12 @@
 
 #include "NativeGameplayTags.h"
 
-UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Modal, "ATLA.UI.Modal");
-UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_GameMenu, "ATLA.UI.GameMenu");
-UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_GameHUD, "ATLA.UI.GameHUD");
-UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_BaseUI, "ATLA.UI.BaseUI");
+//* ATLA UI Layer Tags
+UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Layer_Modal, "ATLA.UI.Layer.Modal");
+UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Layer_GameMenu, "ATLA.UI.Layer.GameMenu");
+UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Layer_GameHUD, "ATLA.UI.Layer.GameHUD");
+UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Layer_BaseUI, "ATLA.UI.Layer.BaseUI");
+
+//* ATLA UI Widget Tags
+UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Widget_PressAnyKeyWidget, "ATLA.UI.Widget.PressAnyKeyWidget");
+UE_DEFINE_GAMEPLAY_TAG(ATLA_UI_Widget_MainMenuWidget, "ATLA.UI.Widget.MainMenuWidget");

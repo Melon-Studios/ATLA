@@ -25,7 +25,7 @@ public:
 		DisplayName = "Push Soft Widget To Widget Stack")
 	static UPushSoftWidgetAsyncActionBase* PushSoftWidget(const UObject* WorldContextObject, APlayerController* OwningPlayerController,
 	                                                      TSoftClassPtr<UATLACommonActivatableWidget> InSoftWidgetClass,
-	                                                      UPARAM(meta = ( Categories = "ATLA.UI")) FGameplayTag InWidgetStackTag,
+	                                                      UPARAM(meta = ( Categories = "ATLA.UI.Layer")) FGameplayTag InWidgetStackTag,
 	                                                      bool bFocusOnNewlyPushedWidget = true);
 
 	//~ Begin UBlueprintAsyncActionBase Interface

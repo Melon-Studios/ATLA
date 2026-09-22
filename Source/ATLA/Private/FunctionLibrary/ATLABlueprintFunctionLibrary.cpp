@@ -1,6 +1,6 @@
 // Copyright Melon Studios.
 
-#include "ATLABlueprintFunctionLibrary.h"
+#include "FunctionLibrary/ATLABlueprintFunctionLibrary.h"
 
 #include "ATLAGameInstance.h"
 #include "Kismet/GameplayStatics.h"

@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Subsystems/GameInstanceSubsystem.h"
-#include "UI/EPushSoftWidgetAsyncState.h"
+#include "Enum/EPushSoftWidgetAsyncState.h"
 
 #include "ATLAUIGameInstanceSubsystem.generated.h"
 

@@ -24,7 +24,7 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "ATLA")
 	static FString GetGameInfoDetails();
-	
+
 	template <typename T>
 	static T* GetDataTableRowByName(UDataTable* DataTable, const FName& RowName);
 };
