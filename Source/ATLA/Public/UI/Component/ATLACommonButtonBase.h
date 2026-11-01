@@ -17,13 +17,20 @@ class ATLA_API UATLACommonButtonBase : public UCommonButtonBase
 {
 	GENERATED_BODY()
 	
-public:
+public:	
+	UFUNCTION(BlueprintCallable, Category = "ATLA|UI")
+	void SetButtonText(FText InText);
+	
+protected:
 	//~ Begin UUserWidget Interface
 	virtual void NativePreConstruct() override;
 	//~ End UUserWidget Interface
 	
-	UFUNCTION(BlueprintCallable, Category = "ATLA|UI")
-	void SetButtonText(FText InText);
+	//~ Begin UCommonButtonBase Interface
+	virtual void NativeOnHovered() override;
+	virtual void NativeOnUnhovered() override;
+	virtual void NativeOnCurrentTextStyleChanged() override;
+	//~ End UCommonButtonBase Interface
 
 private:
 	UPROPERTY(meta = (BindWidgetOptional))

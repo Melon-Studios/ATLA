@@ -8,9 +8,12 @@
 
 #include "ATLAUIGameInstanceSubsystem.generated.h"
 
+class UATLACommonButtonBase;
 class UATLACommonActivatableWidget;
 struct FGameplayTag;
 class UATLACommonUserWidget;
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FOnButtonDescriptionTextUpdatedDelegate, UATLACommonButtonBase*, BroadcastingButton, FText, DescriptionText);
 
 /**
  *	ATLA UI Game Instance Subsystem Class.
@@ -32,6 +35,9 @@ public:
 
 	void PushSoftWidgetToStackAsync(const FGameplayTag& InWidgetStackTag, TSoftClassPtr<UATLACommonActivatableWidget> InSoftWidgetClass,
 	                                TFunction<void(EPushSoftWidgetAsyncState, UATLACommonActivatableWidget*)> AsyncPushStateCallback);
+	
+	UPROPERTY(BlueprintAssignable, Category = "ATLA|UI")
+	FOnButtonDescriptionTextUpdatedDelegate OnButtonDescriptionTextUpdated;
 
 private:
 	UPROPERTY(Transient)
